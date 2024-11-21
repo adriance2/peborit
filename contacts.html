@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peborit</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Scuff Site</div>
+        <nav class="nav-links">
+            <a href="about.html">Home</a>
+            <a href="#" class="active">About Us</a>
+            <button class="login-button" onclick="openModal()">Login</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to Scuff Site! The institution provides state-of-the-art facilities and modern learning environments designed to equip students with the skills and knowledge necessary to excel in their chosen disciplines.</p>
+        <p>The campus features specialized buildings for each department, such as the Engineering Building, the CME Building, the CEAS Building, and the COT Building. Each of these facilities is designed to provide an enriching and conducive learning environment with advanced equipment and resources for both practical and theoretical learning.</p>
+    </div>
+    
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

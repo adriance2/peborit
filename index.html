@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Nature Site</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#contact">Contact</a>
+            <button onclick="openModal()">Login</button>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <section id="about">
+            <h1>About Us</h1>
+            <p>
+                Welcome to Nature Site! Our mission is to bring people closer to the beauty of nature. 
+                Explore lush greenery, connect with wildlife, and embrace sustainability with us.
+            </p>
+        </section>
+        <section id="articles">
+    <div class="article-card">
+        <h3>--FEATURED--</h3>
+        <h2>Scaling up Kelp Forest</h2>
+        <p class="preview">
+            Kelp forests can be seen along much of the west coast of North America. Kelp are large brown algae that live in cool, relatively shallow waters close to the shore.
+        </p>
+        <p class="hidden-content">
+            They grow in dense groupings much like a forest on land. These underwater towers of kelp provide food and shelter for thousands of fish, invertebrates, and marine mammal species.
+            <br><br>
+            Kelp forests harbor a greater variety and higher diversity of plants and animals than almost any other ocean community. Many organisms use the thick blades as a safe shelter for their young from predators or even rough storms.
+            <br><br>
+            Among the many mammals and birds that use kelp forests for protection or feeding are seals, sea lions, whales, sea otters, gulls, terns, snowy egrets, great blue herons, cormorants, and shore birds.
+        </p>
+    </div>
+
+    <div class="article-card">
+        <h3>--FEATURED--</h3>
+        <h2>The Vibrant World of Coral Reefs</h2>
+        <p class="preview">
+            Coral reefs are among the most diverse ecosystems on the planet. These underwater structures are formed by colonies of coral polyps held together by calcium carbonate.
+        </p>
+        <p class="hidden-content">
+            Often referred to as the "rainforests of the sea," coral reefs are home to thousands of marine species, including colorful fish, crustaceans, and mollusks. They protect coastlines from erosion and provide resources for millions of people.
+            <br><br>
+            Coral reefs are also vital for global biodiversity, supporting an intricate web of life. However, threats like coral bleaching, overfishing, and pollution endanger these ecosystems, making conservation efforts critical.
+        </p>
+    </div>
+
+    <div class="article-card">
+        <h3>--FEATURED--</h3>
+        <h2>The Wonders of Tropical Rainforests</h2>
+        <p class="preview">
+            Tropical rainforests are Earth's oldest living ecosystems, home to a vast array of plant and animal species. These forests play a crucial role in maintaining the planet’s oxygen supply.
+        </p>
+        <p class="hidden-content">
+            Found near the equator, tropical rainforests receive ample sunlight and rainfall, creating a lush environment teeming with biodiversity. They are home to exotic wildlife such as jaguars, toucans, sloths, and an incredible diversity of insects.
+            <br><br>
+            These forests also provide critical ecosystem services, including carbon sequestration and water regulation, while supporting millions of indigenous people who rely on them for their livelihoods.
+            <br><br>
+            Despite their importance, tropical rainforests face threats from deforestation, agriculture, and climate change, making conservation efforts essential for their survival.
+        </p>
+    </div>
+</section>
+    </div>
+
+    <div id="loginModal" class="modal">
+    <div class="modal-content">
+        <div class="form-container">
+            <div class="form-content" id="loginForm">
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <button type="button" class="switch" onclick="flipToSignup()">Sign Up</button></p>
+                <button type="button" onclick="closeModal()">Cancel</button>
+            </div>
+            <div class="form-content hidden" id="signupForm">
+                <h2>Sign Up</h2>
+                <form>
+                    <label for="newUsername">Username:</label>
+                    <input type="text" id="newUsername" name="newUsername" placeholder="Choose a username" required>
+                    <label for="newEmail">Email:</label>
+                    <input type="email" id="newEmail" name="newEmail" placeholder="Enter your email" required>
+                    <label for="newPassword">Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" placeholder="Choose a password" required>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <button type="button" class="switch" onclick="flipToLogin()">Login</button></p>
+                <button type="button" onclick="closeModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
